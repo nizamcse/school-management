@@ -1,0 +1,95 @@
+.box{
+    border-top: 0px !important;
+}
+
+.page-head{
+    padding: 15px 20px;
+    font-weight: 500;
+}
+.display--block{
+    display: block !important;
+}
+.table-selectable tr{
+    cursor: pointer;
+}
+
+tr.selected{
+    background-color: #7fffd4 !important;
+}
+
+
+
+
+/**
+Print view CSS
+ */
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table tr{
+    width: 100%;
+}
+
+table th{
+    text-align: left;
+}
+
+.table tr td{
+    border: 1px dotted #111;
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+@page{
+    margin: 1cm 1.5cm;
+}
+
+.text-center{
+    text-align: center !important;
+}
+.p-b-50{
+    padding-bottom: 50px;
+}
+.padding-bottom-15 th {
+    padding-bottom: 15px;
+}
+
+.font-normal th{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    left: 0;
+    right:0;
+    background-color: red;
+}
+
+.m-t-30{
+    margin-top:30px !important;
+}
+.footer { position: fixed; bottom: 0px; left: 0px; right: 0px; background-color: lightblue; height: 50px; }
+
+@media print {
+    .main-footer{
+        display:none !important;
+    }
+
+    td,span,p{
+        font-size: 10px !important;
+    }
+}
+
+.no-border td{
+    border:0px !important;
+    font-size: 10px;
+}
+.error,.error:focus{
+    border-color: red;
+}
