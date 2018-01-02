@@ -134,6 +134,8 @@
                         <li><a href="{{ route('subjects') }}"><i class="fa fa-circle-o"></i>SUBJECTS</a></li>
                         <li><a href="{{ route('groups') }}"><i class="fa fa-circle-o"></i>GROUPS</a></li>
                         <li><a href="{{ route('examinations') }}"><i class="fa fa-circle-o"></i>EXAMINATIONS</a></li>
+                        <li><a href="{{ route('districts') }}"><i class="fa fa-circle-o"></i>DISTRICTS</a></li>
+                        <li><a href="{{ route('police-stations') }}"><i class="fa fa-circle-o"></i>POLICE STATIONS</a></li>
                     </ul>
                 </li>
                 <li class="treeview">

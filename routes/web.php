@@ -155,3 +155,53 @@ Route::get('delete/examination/{id}',[
     'uses'  => 'Master\ExaminationController@delete',
     'as'    => 'delete-examination'
 ]);
+
+/**
+ * District
+ */
+
+
+Route::get('districts',[
+    'uses'  => 'Master\DistrictController@index',
+    'as'    => 'districts'
+]);
+
+Route::post('district',[
+    'uses'  => 'Master\DistrictController@store',
+    'as'    => 'create-district'
+]);
+
+Route::get('delete/district/{id}',[
+    'uses'  => 'Master\DistrictController@delete',
+    'as'    => 'delete-district'
+]);
+
+/**
+ * Police STation
+ */
+
+
+Route::get('police-stations',[
+    'uses'  => 'Master\PoliceStationController@index',
+    'as'    => 'police-stations'
+]);
+
+Route::post('police-station',[
+    'uses'  => 'Master\PoliceStationController@store',
+    'as'    => 'create-police-station'
+]);
+
+Route::post('police-station/{id}',[
+    'uses'  => 'Master\PoliceStationController@update',
+    'as'    => 'update-police-station'
+]);
+
+Route::get('police-station/{id}',[
+    'uses'  => 'Master\PoliceStationController@getPoliceStation',
+    'as'    => 'get-police-station'
+]);
+
+Route::get('delete/police-station/{id}',[
+    'uses'  => 'Master\PoliceStationController@delete',
+    'as'    => 'delete-police-station'
+]);
