@@ -93,3 +93,7 @@ table th{
 .error,.error:focus{
     border-color: red;
 }
+
+.m-w-100{
+    max-height: 100px;
+}

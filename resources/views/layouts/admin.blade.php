@@ -121,16 +121,37 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">MAIN NAVIGATION</li>
-                <li class="treeview active">
+                <li class="treeview">
                     <a href="#">
                         <i class="fa fa-files-o"></i>
                         <span>Master Data</span>
-                        <span class="pull-right-container">
-              <span class="label label-primary pull-right">4</span>
-            </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i>TEST MENU</a></li>
+                        <li><a href="{{ route('classes') }}"><i class="fa fa-circle-o"></i>CLASS</a></li>
+                        <li><a href="{{ route('sections') }}"><i class="fa fa-circle-o"></i>SECTION</a></li>
+                        <li><a href="{{ route('designations') }}"><i class="fa fa-circle-o"></i>DESIGNATION</a></li>
+                        <li><a href="{{ route('degrees') }}"><i class="fa fa-circle-o"></i>DEGREES</a></li>
+                        <li><a href="{{ route('subjects') }}"><i class="fa fa-circle-o"></i>SUBJECTS</a></li>
+                        <li><a href="{{ route('groups') }}"><i class="fa fa-circle-o"></i>GROUPS</a></li>
+                        <li><a href="{{ route('examinations') }}"><i class="fa fa-circle-o"></i>EXAMINATIONS</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-files-o"></i>
+                        <span>Teachers Corner</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o"></i>TEACHERS</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-files-o"></i>
+                        <span>Students Corner</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o"></i>STUDENTS</a></li>
                     </ul>
                 </li>
                 <li>

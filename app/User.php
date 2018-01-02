@@ -26,4 +26,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function delete()
+    {
+        if(file_exists('file_path')){
+            @unlink('file_path');
+        }
+        parent::delete();
+    }
 }
